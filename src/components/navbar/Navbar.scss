@@ -1,0 +1,54 @@
+@use '../../variable' as *;
+
+.navbar-main-cnt {
+    padding: 20px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(180deg, #e3edf7, #e7eff8 10%, #e7eff8, #ebf2f9, #eff4fb 37%, #eff4fb, #f3f6fc 57%, #f7f9fd 69%, #f7f9fd 82%, #fbfcfe);
+
+    .title {
+        font-size: $font-size-18;
+        font-weight: $font-weight-7;
+        color: $text-1;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin-right: 2rem;
+            font-size: $font-size-12;
+            font-weight: $font-weight-7;
+            color: $text-1;
+        }
+    }
+
+    .chat {
+        align-self: center;
+        background-color: $text-1;
+        border-radius: 5px;
+        padding: 7px;
+        flex-direction: row;
+        gap: 5px;
+        font-size: $font-size-10;
+        font-weight: $font-weight-5;
+        color: $white;
+        cursor: pointer;
+
+        .bi-chat-dots-fill {
+            color: $white;
+        }
+    }
+
+    .chat:hover {
+        border: 1px solid $text-1;
+        color: $text-1;
+        background-color: $white;
+
+        .bi-chat-dots-fill {
+            color: $text-1;
+        }
+    }
+}
